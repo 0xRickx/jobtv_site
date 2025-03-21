@@ -9,16 +9,11 @@ export default defineConfig({
   },
  server: {
     host: 'www.jobtv.site',
-    port: 443,
-    https: {
-      key: fs.readFileSync('/root/ssl/private.key'),
-      cert: fs.readFileSync('/root/ssl/jobtv_site.crt'),
-      ca: fs.readFileSync('/root/ssl/jobtv_site.ca-bundle'),
-
+    port: 5173,
 
     hmr: {
       overlay: false // Disabilita l'overlay dei warning nel browser
      }
-    },
+  
   },
 });
